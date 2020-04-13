@@ -1,0 +1,53 @@
+
+<div class="container p-4">
+    <div class="row">
+        {{#each Pokemon}}
+        <div class="col-md-3">
+            <div class="card text-center">
+        
+            </div>
+        </div>
+        {{else}}
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <!-- Buscador Inicio -->
+                    <div class="get-info-form">
+                        <div class="">
+
+                        </div>
+                        <div id="username" required></div>
+                        <!-- <div id="error-message"> -->
+                    </div>
+                    <!-- Buscador Fin -->
+                </div>
+
+
+            </div>
+            <!-- Tabla Fin -->
+
+            <!-- tableFin -->
+            <button type="button" class="btn btn-danger float-right" onclick="getFirstTen()">Ver +10</button>
+
+            <table class="table table-hover table-dark tablaLista" style="margin-top:40px;" id="pokemon-list">
+
+                <thead>
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Face</th>
+                        <th>Abilities</th>
+                        <th>Types</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/js/lista.js"></script>
